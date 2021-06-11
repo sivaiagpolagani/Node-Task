@@ -1,0 +1,15 @@
+CREATE TABLE `category` (
+  `sno` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `subcatg` int DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `category`
+--
+
+LOCK TABLES `category` WRITE;
+/*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` VALUES (1,'0',NULL),(2,'Electronics',0);
